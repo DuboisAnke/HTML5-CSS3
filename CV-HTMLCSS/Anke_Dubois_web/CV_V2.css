@@ -1,0 +1,208 @@
+/* Algemeen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Calibri Light", sans-serif;
+    font-size: 18px;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+}
+
+h3 {
+    margin: 25px;
+    text-align: center;
+}
+
+#introductie p {
+    background-color: #fff;
+    width: 100%;
+}
+
+#gegevens {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#diplomas {
+    background-color: #FDDBE7;
+    border: #fff solid 5px;
+}
+/* Tabelopmaak */
+#diplomastabel {
+    display: none;
+}
+#tabel1 tr,td,th {
+    border: 5px solid white;
+    text-align: center;
+    padding: 10px;
+
+}
+#tabel1 tbody tr:nth-child(odd) {
+    background-color: #fddbe7;
+}
+#tabel1 tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+aside table:hover {
+    filter: drop-shadow(10px 0 15px #707070);
+}
+thead {
+    font-size: 22px;
+    text-align: center;
+    background-color: #707070;
+    color: #fff;
+}
+
+
+/* Lijstopmaak */
+ul li:nth-child(odd) {
+    background-color: #707070;
+    color: #fff;
+}
+ul {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+ul:hover {
+    filter: drop-shadow(10px 0 15px #FDDBE7);
+}
+li {
+    list-style: none;
+    padding: 5px;
+}
+ol {
+    padding: 0;
+}
+#diplomaslist {
+    background-color: #fff;
+}
+
+
+/* Titelopmaak */
+span {
+    color: lightpink;
+}
+header {
+    font-family: Bahnschrift, sans-serif, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #707070;
+    padding: 5px;
+}
+
+/* Footeropmaak */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+    margin-top: 25px;
+}
+#naam, #info {
+    width: 15%;
+}
+#topbutton {
+    border: 2px solid #FDDBE7;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #ff96b4;
+    color: #000;
+    text-decoration: none;
+    width: 15%;
+}
+#topbutton:hover {
+    filter: drop-shadow(0 0 10px #000);
+}
+
+/* Profielfoto-opmaak */
+figure img {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid white;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+figure img:hover {
+    filter: drop-shadow(0 0 30px #8FDBFF);
+}
+
+figure img:active {
+    filter: none;
+    border: 5px solid #000;
+}
+
+#container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: #FDDBE7 5px solid;
+    background-color: #fff;
+
+}
+
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: #fff solid 5px;
+    background-color: #FDDBE7;
+}
+
+#container3 {
+    border: #FDDBE7 solid 5px;
+}
+
+/* Mediaquerys */
+
+@media screen and (min-width: 480px) {
+
+    figure img {
+        display: inline-block;
+    }
+    #container1 {
+        flex-direction: row;
+        float: right;
+        width: 25%;
+        margin-left: 25px;
+    }
+    #container2 {
+        width: 70%;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    #diplomaslist {
+        display: none;
+    }
+
+    #diplomastabel {
+        display: table;
+        background-color: #fff
+    }
+
+    #container3 {
+        width: 70%;
+        margin-left: 25px;
+        margin-top: 25px;
+        background-color: #FDDBE7;
+    }
+
+}
+
+
+
